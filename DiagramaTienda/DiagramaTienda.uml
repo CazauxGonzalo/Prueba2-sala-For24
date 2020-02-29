@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:Model xmi:id="_mFUH8Fp-EeqfxJniLzB4bw" name="DiagramaTienda">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mWORwFp-EeqfxJniLzB4bw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6B-qsFp-EeqfxJniLzB4bw" name="Electrodomestico">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rL3VkFp_EeqfxJniLzB4bw" name="PrecioBase">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6ugkEFp_EeqfxJniLzB4bw">
+          <body></body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-6YHkFp_EeqfxJniLzB4bw" name="color" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CzyCEFqAEeqfxJniLzB4bw" name="consumoEnergetico"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_E0fVkFqAEeqfxJniLzB4bw" name="peso"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_BmJmwFp_EeqfxJniLzB4bw" name="Tienda"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FsbfoFp_EeqfxJniLzB4bw" name="Lavadora">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_XT2CQFp_EeqfxJniLzB4bw" name="electrodomestico" type="_6B-qsFp-EeqfxJniLzB4bw" association="_XTzmAFp_EeqfxJniLzB4bw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XT2pUFp_EeqfxJniLzB4bw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XT3QYFp_EeqfxJniLzB4bw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HccrwFp_EeqfxJniLzB4bw" name="Television">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_wsIDsFqAEeqfxJniLzB4bw" name="electrodomestico" type="_6B-qsFp-EeqfxJniLzB4bw" association="_wsGOgFqAEeqfxJniLzB4bw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wsIqwFqAEeqfxJniLzB4bw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wsIqwVqAEeqfxJniLzB4bw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PclyIFp_EeqfxJniLzB4bw" name="EjecutableP"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XTzmAFp_EeqfxJniLzB4bw" memberEnd="_XT2CQFp_EeqfxJniLzB4bw _XT33cFp_EeqfxJniLzB4bw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XT1bMFp_EeqfxJniLzB4bw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XT1bMVp_EeqfxJniLzB4bw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_XT33cFp_EeqfxJniLzB4bw" name="lavadora" type="_FsbfoFp_EeqfxJniLzB4bw" association="_XTzmAFp_EeqfxJniLzB4bw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wsGOgFqAEeqfxJniLzB4bw" memberEnd="_wsIDsFqAEeqfxJniLzB4bw _wsJR0FqAEeqfxJniLzB4bw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wsHcoFqAEeqfxJniLzB4bw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wsHcoVqAEeqfxJniLzB4bw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_wsJR0FqAEeqfxJniLzB4bw" name="television" type="_HccrwFp_EeqfxJniLzB4bw" association="_wsGOgFqAEeqfxJniLzB4bw"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_vx0NAFp_EeqfxJniLzB4bw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vx00EFp_EeqfxJniLzB4bw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <ActionLanguage:TextualRepresentation xmi:id="_6ujnYFp_EeqfxJniLzB4bw" base_Comment="_6ugkEFp_EeqfxJniLzB4bw" language="org.eclipse.papyrus.uml.textedit.property.xtext.UmlProperty"/>
+</xmi:XMI>

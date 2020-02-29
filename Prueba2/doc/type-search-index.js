@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"Tienda","l":"EjecutableP"},{"p":"Tienda","l":"Electrodomestico"},{"p":"Tienda","l":"Lavadora"},{"p":"Tienda","l":"Television"}]
